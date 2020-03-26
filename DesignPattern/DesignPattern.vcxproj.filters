@@ -23,5 +23,14 @@
     <ClInclude Include="observer.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="absfactory.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="factory.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

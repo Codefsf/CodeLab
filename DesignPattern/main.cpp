@@ -2,7 +2,17 @@
 
 #include "observer.hpp"
 
-int main()
+class A {
+public:
+	A(int x) { y = x + 1; }
+	void Print() const { printf("%d", y); }
+private:
+	int y;
+};
+
+void main()
 {
-	testObserver();
+	int x = strlen((char*)L"ABC");
+	printf("%d", x);
 }
+
