@@ -1,15 +1,5 @@
 #include <iostream>
 
-
-
-
-
-
-
-
-
-
-
 void testAbstractFactory()
 {
 

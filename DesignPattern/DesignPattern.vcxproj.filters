@@ -32,5 +32,11 @@
     <ClInclude Include="singleton.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="proxy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="templatemethod.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
