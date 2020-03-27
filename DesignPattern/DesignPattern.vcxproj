@@ -128,10 +128,13 @@
   <ItemGroup>
     <ClInclude Include="absfactory.hpp" />
     <ClInclude Include="factory.hpp" />
+    <ClInclude Include="mediator.hpp" />
+    <ClInclude Include="memento.hpp" />
     <ClInclude Include="observer.hpp" />
     <ClInclude Include="proxy.hpp" />
     <ClInclude Include="singleton.hpp" />
     <ClInclude Include="templatemethod.hpp" />
+    <ClInclude Include="visitor.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

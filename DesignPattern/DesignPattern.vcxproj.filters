@@ -38,5 +38,14 @@
     <ClInclude Include="templatemethod.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="mediator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="visitor.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="memento.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
