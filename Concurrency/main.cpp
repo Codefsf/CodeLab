@@ -12,6 +12,9 @@ mutex g_mutex;
 void output() {
 	lock_guard<mutex> mu(g_mutex);
 	cout << "Thread id :" << g_at++ << endl;
+
+	if (g_at == 5)
+		this_thread::sleep_for(chrono::seconds(5));
 }
 
 int main() {
@@ -21,6 +24,7 @@ int main() {
 	}
 
 	for (auto &item : ths) {
+		cout << "Joinable:" << item.joinable() << endl;
 		item.join();
 	}
 }
