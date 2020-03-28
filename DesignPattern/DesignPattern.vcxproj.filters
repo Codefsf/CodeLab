@@ -47,5 +47,11 @@
     <ClInclude Include="memento.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="strategy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bulider.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

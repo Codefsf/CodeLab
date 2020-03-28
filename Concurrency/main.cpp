@@ -3,28 +3,33 @@
 #include <atomic>
 #include <vector>
 #include <mutex>
+#include <condition_variable>
+
+#include "producerconsumer.hpp"
 
 using namespace std;
 
 atomic<int> g_at = 0;
 mutex g_mutex;
+condition_variable g_cv;
+
+bool g_index = false;
 
 void output() {
-	lock_guard<mutex> mu(g_mutex);
-	cout << "Thread id :" << g_at++ << endl;
+	unique_lock<mutex> mu(g_mutex);
 
-	if (g_at == 5)
-		this_thread::sleep_for(chrono::seconds(5));
+	if (!g_index)
+		g_cv.wait(mu);
+
+	cout << "Thread id :" << g_at++ << endl;
+}
+
+void go() {
+	g_index = true;
+	g_cv.notify_all();
+	//g_cv.notify_one();
 }
 
 int main() {
-	vector<thread> ths;
-	for (int i = 0; i < 10; i++) {
-		ths.push_back(thread(output));
-	}
-
-	for (auto &item : ths) {
-		cout << "Joinable:" << item.joinable() << endl;
-		item.join();
-	}
+	testPC();
 }

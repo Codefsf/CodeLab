@@ -49,8 +49,5 @@ void testObserver()
 	}
 
 	subject->update(1);
-
-	cout << "--------------------" << endl;
-
 	subject->update(2);
 }

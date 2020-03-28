@@ -4,9 +4,10 @@
 #include "proxy.hpp"
 #include "templatemethod.hpp"
 #include "memento.hpp"
+#include "strategy.hpp"
 
 void main()
 {
-	testMemento();
+	testStrategy();
 }
 
