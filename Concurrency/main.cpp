@@ -6,6 +6,7 @@
 #include <condition_variable>
 
 #include "producerconsumer.hpp"
+#include "functionobject.hpp"
 
 using namespace std;
 
@@ -31,5 +32,5 @@ void go() {
 }
 
 int main() {
-	testPC();
+	testThreadObj();
 }

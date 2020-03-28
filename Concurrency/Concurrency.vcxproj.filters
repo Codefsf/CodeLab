@@ -23,5 +23,8 @@
     <ClInclude Include="producerconsumer.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="functionobject.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -35,9 +35,10 @@ void consumer() {
 
 		g_que.pop();
 
-		cout << "-------Consumer:" << g_que.size() << endl;
+		cout << "-------Consumer:"  << this_thread::get_id << g_que.size() << endl;
 
-		condiPro.notify_all();
+		//if (g_que.size() == 0)
+			//condiPro.notify_all();
 	}
 }
 
@@ -48,7 +49,7 @@ void testPC() {
 		producers.push_back(thread(producer));
 	}
 
-	for (int i = 0; i < 5; i++) {
+	for (int i = 0; i < 50; i++) {
 		consumers.push_back(thread(consumer));
 	}
 
