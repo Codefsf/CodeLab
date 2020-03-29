@@ -7,7 +7,6 @@ using namespace std;
 
 mutex				mtx;
 condition_variable	condiPro, condiCon;
-
 queue<int>		g_que;
 int g_max		= 10;
 
@@ -16,11 +15,9 @@ void producer() {
 		this_thread::sleep_for(chrono::seconds(1));
 
 		unique_lock<mutex> mu(mtx);
-		condiPro.wait(mu, []() { return g_que.size() != g_max; });
+		condiPro.wait(mu, []() { return g_que.size() != 0; });
 
-		g_que.push(1);
-
-		cout << "Producer:" << g_que.size() << endl;
+		cout << "Producer:" << endl;
 
 		condiCon.notify_all();
 	}
@@ -31,25 +28,24 @@ void consumer() {
 	{
 		this_thread::sleep_for(chrono::seconds(1));
 		unique_lock<mutex> mu(mtx);
-		condiCon.wait(mu, []() { return g_que.size() == g_max; });
+		condiCon.wait(mu, [](){ return g_que.size() != 0; });
 
-		g_que.pop();
+		cout << "-------Consumer:"  << this_thread::get_id() << endl;
 
-		cout << "-------Consumer:"  << this_thread::get_id << g_que.size() << endl;
-
-		//if (g_que.size() == 0)
-			//condiPro.notify_all();
+		condiPro.notify_all();
 	}
 }
 
 void testPC() {
 	vector<thread> consumers, producers;
 
+	consumers[3];
+
 	for (int i = 0; i < 2; i++) {
 		producers.push_back(thread(producer));
 	}
 
-	for (int i = 0; i < 50; i++) {
+	for (int i = 0; i < 2; i++) {
 		consumers.push_back(thread(consumer));
 	}
 

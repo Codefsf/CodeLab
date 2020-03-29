@@ -26,5 +26,8 @@
     <ClInclude Include="functionobject.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="threadpool.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

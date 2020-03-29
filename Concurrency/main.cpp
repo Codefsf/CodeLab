@@ -32,5 +32,5 @@ void go() {
 }
 
 int main() {
-	testThreadObj();
+	testPC();
 }

@@ -28,6 +28,10 @@ void output1() {
 
 void testThreadObj() {
 	vector<thread> vec;
+	thread tr(output1);
+	tr.get_id();
+	
+	cout << "---------------" << thread::hardware_concurrency() << endl;
 
 	auto fun = []() {
 		lock_guard<mutex> mu(mtx1);
