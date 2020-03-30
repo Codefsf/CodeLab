@@ -53,5 +53,11 @@
     <ClInclude Include="bulider.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="state.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

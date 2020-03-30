@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="absfactory.hpp" />
+    <ClInclude Include="adapter.hpp" />
     <ClInclude Include="bulider.hpp" />
     <ClInclude Include="factory.hpp" />
     <ClInclude Include="mediator.hpp" />
@@ -134,6 +135,7 @@
     <ClInclude Include="observer.hpp" />
     <ClInclude Include="proxy.hpp" />
     <ClInclude Include="singleton.hpp" />
+    <ClInclude Include="state.hpp" />
     <ClInclude Include="strategy.hpp" />
     <ClInclude Include="templatemethod.hpp" />
     <ClInclude Include="visitor.hpp" />

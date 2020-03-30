@@ -5,9 +5,10 @@
 #include "templatemethod.hpp"
 #include "memento.hpp"
 #include "strategy.hpp"
+#include "adapter.hpp"
 
 void main()
 {
-	testStrategy();
+	testAdapter();
 }
 
