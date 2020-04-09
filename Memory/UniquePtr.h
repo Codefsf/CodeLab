@@ -19,11 +19,11 @@ public:
 	UniquePtr(const UniquePtr& ptr) = delete;
 	UniquePtr& operator=(const UniquePtr& ptr) = delete;
 
-	UniquePtr(const UniquePtr&& ptr) noexcept : m_ptr(ptr.m_ptr) {
+	UniquePtr(UniquePtr&& ptr) noexcept : m_ptr(ptr.m_ptr) {
 		ptr.m_ptr = nullptr;
 	}
 
-	UniquePtr& operator=(const T&& ptr) noexcept {
+	UniquePtr& operator=(T&& ptr) noexcept {
 		m_ptr = ptr.m_ptr;
 		ptr.m_ptr = nullptr;
 	}
