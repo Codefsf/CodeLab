@@ -7,13 +7,13 @@ int binarySearch(int arr[], int n, int value)
 	while (left <= right) {
 		mid = (left + right) / 2;
 
-		if (value == mid) {
+		if (value == arr[mid]) {
 			return mid;
 		}
-		else if (value < mid) {
+		else if (value < arr[mid]) {
 			right = mid - 1;
 		} 
-		else if (value > mid) {
+		else if (value > arr[mid]) {
 			left = mid + 1;
 		}
 	}
