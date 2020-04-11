@@ -29,5 +29,11 @@
     <ClInclude Include="observe.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="lockdead.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sync.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

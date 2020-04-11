@@ -129,8 +129,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="functionobject.hpp" />
+    <ClInclude Include="lockdead.hpp" />
     <ClInclude Include="observe.hpp" />
     <ClInclude Include="producerconsumer.hpp" />
+    <ClInclude Include="sync.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -7,8 +7,11 @@
 
 #include "producerconsumer.hpp"
 #include "functionobject.hpp"
+#include "lockdead.hpp"
+#include "sync.hpp"
 
 using namespace std;
 
 int main() {
+	testSync();
 }
