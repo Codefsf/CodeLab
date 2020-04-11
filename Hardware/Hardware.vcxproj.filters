@@ -15,18 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Hardware.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="producerconsumer.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="functionobject.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="observe.hpp">
+    <ClInclude Include="CPU.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
