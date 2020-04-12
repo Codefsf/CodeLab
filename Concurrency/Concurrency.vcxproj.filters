@@ -35,5 +35,11 @@
     <ClInclude Include="sync.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="future.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="promise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

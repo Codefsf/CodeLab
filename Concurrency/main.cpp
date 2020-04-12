@@ -9,9 +9,11 @@
 #include "functionobject.hpp"
 #include "lockdead.hpp"
 #include "sync.hpp"
+#include "future.hpp"
+#include "promise.hpp"
 
 using namespace std;
 
 int main() {
-	testSync();
+	testPromise();
 }
