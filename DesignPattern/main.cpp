@@ -6,9 +6,10 @@
 #include "memento.hpp"
 #include "strategy.hpp"
 #include "adapter.hpp"
+#include "composite.hpp"
 
 void main()
 {
-	testAdapter();
+	testComposite();
 }
 
