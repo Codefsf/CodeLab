@@ -129,6 +129,7 @@
     <ClInclude Include="absfactory.hpp" />
     <ClInclude Include="adapter.hpp" />
     <ClInclude Include="bulider.hpp" />
+    <ClInclude Include="chain.hpp" />
     <ClInclude Include="composite.hpp" />
     <ClInclude Include="factory.hpp" />
     <ClInclude Include="mediator.hpp" />

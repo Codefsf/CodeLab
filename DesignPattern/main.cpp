@@ -7,9 +7,10 @@
 #include "strategy.hpp"
 #include "adapter.hpp"
 #include "composite.hpp"
+#include "chain.hpp"
 
 void main()
 {
-	testComposite();
+	testChain();
 }
 
