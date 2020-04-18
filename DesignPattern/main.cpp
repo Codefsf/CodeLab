@@ -8,9 +8,10 @@
 #include "adapter.hpp"
 #include "composite.hpp"
 #include "chain.hpp"
+#include "facade.hpp"
 
 void main()
 {
-	testChain();
+	testFacadeClient();
 }
 

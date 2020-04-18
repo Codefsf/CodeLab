@@ -59,7 +59,6 @@ private:
 };
 
 
-
 void testChain() {
 	HandlerGreater gr;
 	HandlerLess	   le;

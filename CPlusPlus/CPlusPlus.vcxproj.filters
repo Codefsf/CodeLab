@@ -26,5 +26,24 @@
     <ClInclude Include="string.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CPlusPlus.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\teacher\src\contents\chat_area\tutorChatArea\src\res\faces\em_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\teacher\bin\release_half\resources\blackboard_black_960_720_net.png">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>

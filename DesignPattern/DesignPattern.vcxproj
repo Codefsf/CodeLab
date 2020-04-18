@@ -131,6 +131,7 @@
     <ClInclude Include="bulider.hpp" />
     <ClInclude Include="chain.hpp" />
     <ClInclude Include="composite.hpp" />
+    <ClInclude Include="facade.hpp" />
     <ClInclude Include="factory.hpp" />
     <ClInclude Include="mediator.hpp" />
     <ClInclude Include="memento.hpp" />

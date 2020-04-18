@@ -126,8 +126,17 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="resource.h" />
     <ClInclude Include="string.hpp" />
     <ClInclude Include="templateparam.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CPlusPlus.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\teacher\bin\release_half\resources\blackboard_black_960_720_net.png" />
+    <Image Include="..\..\teacher\src\contents\chat_area\tutorChatArea\src\res\faces\em_1.png" />
+    <Image Include="bitmap1.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
