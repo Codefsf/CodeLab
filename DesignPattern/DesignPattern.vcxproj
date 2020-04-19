@@ -133,6 +133,7 @@
     <ClInclude Include="composite.hpp" />
     <ClInclude Include="facade.hpp" />
     <ClInclude Include="factory.hpp" />
+    <ClInclude Include="flyweight.hpp" />
     <ClInclude Include="mediator.hpp" />
     <ClInclude Include="memento.hpp" />
     <ClInclude Include="observer.hpp" />

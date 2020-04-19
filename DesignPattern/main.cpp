@@ -9,9 +9,10 @@
 #include "composite.hpp"
 #include "chain.hpp"
 #include "facade.hpp"
+#include "flyweight.hpp"
 
 void main()
 {
-	testFacadeClient();
+	testFlyweight();
 }
 

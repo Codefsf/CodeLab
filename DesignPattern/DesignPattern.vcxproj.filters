@@ -68,5 +68,8 @@
     <ClInclude Include="facade.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="flyweight.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
