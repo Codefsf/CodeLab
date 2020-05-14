@@ -26,10 +26,8 @@ int main() {
 
 	{
 		char* ch2 = new char[1024 * 1024 * 10];
-
 	}
 	
-
 	cout << "Main end" << endl;
 
 	return -1;
