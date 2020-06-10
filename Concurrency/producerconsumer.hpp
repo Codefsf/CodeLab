@@ -40,6 +40,7 @@ void testPC() {
 	vector<thread> consumers, producers;
 
 	consumers[3];
+	producers[3];
 
 	for (int i = 0; i < 2; i++) {
 		producers.push_back(thread(producer));

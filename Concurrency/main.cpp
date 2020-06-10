@@ -50,21 +50,5 @@ void threadTest() {
 }
 
 int main() {
-	//init();
-
-	thread th1(threadTest);
-	/*thread th2(threadTest);
-	thread th3(threadTest);
-	thread th4(threadTest);
-	thread th5(threadTest);
-	thread th6(threadTest);*/
-
-	method();
-
-	th1.join();
-	/*th2.join();
-	th3.join();
-	th4.join();
-	th5.join();
-	th6.join();*/
+	testPC();
 }

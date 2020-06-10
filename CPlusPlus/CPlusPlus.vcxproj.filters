@@ -29,6 +29,15 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="bind.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="move.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CPlusPlus.rc">

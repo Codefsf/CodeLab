@@ -59,5 +59,4 @@ void testTemplateParam()
 	auto la = test();
 
 	cout << la(2) << endl;
-
 }

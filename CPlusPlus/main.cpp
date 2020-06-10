@@ -2,6 +2,8 @@
 #include "string.hpp"
 #include <iostream>
 #include <Windows.h>
+#include "move.hpp"
+#include "vector.hpp"
 
 using namespace std;
 
@@ -18,17 +20,4 @@ public:
 
 
 int main() {
-	cout << "Main start" << endl;
-
-	{
-		char* ch = new char[1024 * 1024 * 10];
-	}
-
-	{
-		char* ch2 = new char[1024 * 1024 * 10];
-	}
-	
-	cout << "Main end" << endl;
-
-	return -1;
 }

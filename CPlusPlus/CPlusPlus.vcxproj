@@ -127,9 +127,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bind.hpp" />
+    <ClInclude Include="move.hpp" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="string.hpp" />
     <ClInclude Include="templateparam.hpp" />
+    <ClInclude Include="vector.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CPlusPlus.rc" />
