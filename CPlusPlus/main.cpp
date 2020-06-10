@@ -20,4 +20,5 @@ public:
 
 
 int main() {
+	testVectorItem();
 }

@@ -23,3 +23,52 @@ void testVectorBool() {
 	}
 }
 
+//-----------------------------------------------
+/*
+vector对于自定义类型的要求：
+1.可以拷贝构造
+2.拥有默认构造函数
+*/
+class VecItem {
+public:
+	//VecItem() {}
+
+	VecItem(int n) {
+		num = new int(n);
+	}
+
+	//~VecItem() {}
+
+	VecItem(const VecItem& item) = default;
+	VecItem& operator=(const VecItem& item) = delete;
+
+	int	*num {nullptr};
+};
+
+void testVectorItem()
+{
+	vector<VecItem> vec;
+
+	cout << vec.size() << " " << vec.capacity() << endl;
+
+	vec.push_back(VecItem(1));
+	vec.push_back(VecItem(2));
+	vec.push_back(VecItem(3));
+
+	cout << vec.size() << " " << vec.capacity() << endl;
+
+	for (auto &item : vec) {
+		cout << *item.num << endl;
+	}
+
+	vec.push_back(VecItem(4));
+	vec.push_back(VecItem(5));
+	vec.push_back(VecItem(6));
+
+	cout << "-----------------------" << endl;
+
+	for (auto &item : vec) {
+		cout << *item.num << endl;
+	}
+}
+
