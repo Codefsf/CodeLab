@@ -20,5 +20,5 @@ public:
 
 
 int main() {
-	testVectorItem();
+	testRemoveErase();
 }

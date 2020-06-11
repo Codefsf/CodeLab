@@ -1,4 +1,5 @@
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -70,5 +71,66 @@ void testVectorItem()
 	for (auto &item : vec) {
 		cout << *item.num << endl;
 	}
+}
+
+//-----------------------------------------------
+/*
+支持区间操作的函数：
+insert
+erase
+assign
+copy
+reserve
+*/
+
+void outputVec(const vector<int> &vec, const string& title) {
+	for (auto &item : vec) {
+		cout << item << " ";
+	}
+
+	cout << title << " size:" << vec.size()
+		<< " capacity:" << vec.capacity() << endl;
+}
+
+void testVecRange()
+{
+	vector<int> vec;
+
+	cout << vec.size() << " " << vec.capacity() << endl;
+
+	vec.reserve(3);
+
+	cout << vec.size() << " " << vec.capacity() << endl;
+
+	vec.resize(3);
+
+	cout << vec.size() << " " << vec.capacity() << endl;
+
+	outputVec(vec, "Before insert:");
+	vec.insert(vec.begin(), 3, 3);
+	outputVec(vec, "After insert:");
+
+	outputVec(vec, "Before erase:");
+	vec.erase(vec.begin(), vec.end());
+	outputVec(vec, "After erase:");
+}
+
+
+//-----------------------------------------------
+/*
+remove和erase的区别
+*/
+
+void testRemoveErase()
+{
+	vector<int>	vec;
+	vec.push_back(1);
+	vec.push_back(2);
+	vec.push_back(3);
+	vec.push_back(4);
+
+	outputVec(vec, "Before remove:");
+	vec.erase(remove(vec.begin(), vec.end(), 1));
+	outputVec(vec, "After remove:");
 }
 
