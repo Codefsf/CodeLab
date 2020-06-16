@@ -4,6 +4,7 @@
 #include <Windows.h>
 #include "move.hpp"
 #include "vector.hpp"
+#include "set.hpp"
 
 using namespace std;
 
@@ -20,5 +21,5 @@ public:
 
 
 int main() {
-	testRemoveErase();
+	testSet();
 }

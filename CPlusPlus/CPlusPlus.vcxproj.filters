@@ -38,6 +38,9 @@
     <ClInclude Include="vector.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="set.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CPlusPlus.rc">

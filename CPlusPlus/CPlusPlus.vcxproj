@@ -129,6 +129,7 @@
     <ClInclude Include="bind.hpp" />
     <ClInclude Include="move.hpp" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="set.hpp" />
     <ClInclude Include="string.hpp" />
     <ClInclude Include="templateparam.hpp" />
     <ClInclude Include="vector.hpp" />
