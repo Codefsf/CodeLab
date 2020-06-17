@@ -28,4 +28,6 @@ void testAlgorithm()
 	int sum = accumulate(vec.begin(), vec.end(), 0, MyAddLambda);
 
 	cout << "Sum is: " << sum << endl;
+
+	cout << "Count is " << count(vec.begin(), vec.end(), 0) << endl;
 }
