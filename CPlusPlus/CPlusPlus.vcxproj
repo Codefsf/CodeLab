@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bind.hpp" />
+    <ClInclude Include="map.hpp" />
     <ClInclude Include="move.hpp" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="set.hpp" />

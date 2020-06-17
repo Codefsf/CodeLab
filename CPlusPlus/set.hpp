@@ -7,15 +7,19 @@ using namespace std;
 
 class MySetItem {
 public:
-	MySetItem(int num) : m_num(num){}
+	MySetItem(int num, string name) :
+		m_num(num),
+		m_name(name){}
+
 	~MySetItem() {}
 
 	bool operator<(const MySetItem& item) const {
-		return m_num < item.m_num;
+		return m_num < item.m_num && m_name < item.m_name;
 	}
 //For test
 //private:
-	int	m_num {0};
+	int		m_num {0};
+	string	m_name{ "" };
 };
 
 bool lessFunction(string* left, string* right) {
@@ -38,17 +42,21 @@ void testSet()
 		cout << item.m_num << endl;
 	}*/
 
-	auto lessFunctionLambda = [](string* left, string* right) {
-		return *left < *right;
-	};
+	MySetItem item1(1, "name1");
+	MySetItem item2(2, "name2");
+	MySetItem item3(3, "name3");
+	
+	set<MySetItem> myset;
+	myset.insert(item1);
+	myset.insert(item2);
+	myset.insert(item3);
 
-	set<string*, decltype(lessFunction)> myStrSet;
-	myStrSet.insert(new string("ahorse"));
-	myStrSet.insert(new string("bmonkey"));
-	myStrSet.insert(new string("cpig"));
-	myStrSet.insert(new string("dfish"));
-
-	for (auto &item : myStrSet) {
-		cout << *item << endl;
+	for (auto &item : myset) {
+		cout << item.m_name << " " << item.m_num << endl;
 	}
+
+	MySetItem item4(3, "name3");
+	auto itr = myset.find(item4);
+
+	cout << (*itr).m_name << " " << (*itr).m_num << endl;
 }

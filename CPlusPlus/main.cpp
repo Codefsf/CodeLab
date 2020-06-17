@@ -5,6 +5,7 @@
 #include "move.hpp"
 #include "vector.hpp"
 #include "set.hpp"
+#include "map.hpp"
 
 using namespace std;
 
@@ -21,5 +22,5 @@ public:
 
 
 int main() {
-	testSet();
+	testMap();
 }
