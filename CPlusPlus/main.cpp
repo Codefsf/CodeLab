@@ -6,6 +6,7 @@
 #include "vector.hpp"
 #include "set.hpp"
 #include "map.hpp"
+#include "algorithm.hpp"
 
 using namespace std;
 
@@ -22,5 +23,5 @@ public:
 
 
 int main() {
-	testMap();
+	testAlgorithm();
 }
