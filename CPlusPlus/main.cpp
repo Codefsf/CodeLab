@@ -7,6 +7,7 @@
 #include "set.hpp"
 #include "map.hpp"
 #include "algorithm.hpp"
+#include "typetraits.hpp"
 
 using namespace std;
 
@@ -23,5 +24,5 @@ public:
 
 
 int main() {
-	testAlgorithm();
+	testTypeTraits();
 }

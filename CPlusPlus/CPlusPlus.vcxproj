@@ -134,6 +134,7 @@
     <ClInclude Include="set.hpp" />
     <ClInclude Include="string.hpp" />
     <ClInclude Include="templateparam.hpp" />
+    <ClInclude Include="typetraits.hpp" />
     <ClInclude Include="vector.hpp" />
   </ItemGroup>
   <ItemGroup>
