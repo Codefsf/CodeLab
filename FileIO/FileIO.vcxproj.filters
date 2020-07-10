@@ -23,5 +23,8 @@
     <ClInclude Include="filemapping.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="libuv.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -8,6 +8,7 @@
 #include "map.hpp"
 #include "algorithm.hpp"
 #include "typetraits.hpp"
+#include "bind.hpp"
 
 using namespace std;
 
@@ -24,5 +25,5 @@ public:
 
 
 int main() {
-	testTypeTraits();
+	testBind();
 }

@@ -49,6 +49,17 @@ void threadTest() {
 	this_thread::sleep_for(100s);
 }
 
+void testCPU() {
+	while (1) {}
+}
+
 int main() {
-	testPC();
+	vector<thread> vec;
+	for (int i = 0; i < 8; i++) {
+		vec.push_back(thread(testCPU));
+	}
+
+	for (auto &item : vec) {
+		item.join();
+	}
 }

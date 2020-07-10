@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <windows.h>
 using namespace std;
 
@@ -30,4 +30,4 @@ int testFileMapping()
 	UnmapViewOfFile(pBuf);
 	CloseHandle(hMapFile);
 	return 0;
-}
+}*/
